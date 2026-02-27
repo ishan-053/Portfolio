@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Eagle+Lake&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lugrasimo&family=Outfit:wght@100..900&family=Red+Rose:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Eagle+Lake&family=Fugaz+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lugrasimo&family=Outfit:wght@100..900&family=Red+Rose:wght@300..700&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    .font-red-rose {
+        font-family: 'Red Rose', serif;
+    }
+
+    .font-fugaz {
+        font-family: 'Fugaz One', cursive;
+    }
+</style>
+
+<body>
+
+    <div class="bg" style="position:fixed; inset:0; z-index:0; overflow:hidden; background:#080810;">
+
+
+        <div
+            style="position:absolute; width:600px; height:600px; border-radius:50%; background:radial-gradient(circle, #2563eb 0%, transparent 70%); filter:blur(80px); opacity:0.3; top:-200px; left:-150px; animation:drift 20s linear infinite;">
+        </div>
+        <div
+            style="position:absolute; width:500px; height:500px; border-radius:50%; background:radial-gradient(circle, #7c3aed 0%, transparent 70%); filter:blur(80px); opacity:0.25; top:10%; right:-100px; animation:drift 25s linear infinite; animation-delay:-8s;">
+        </div>
+        <div
+            style="position:absolute; width:400px; height:400px; border-radius:50%; background:radial-gradient(circle, #0ea5e9 0%, transparent 70%); filter:blur(80px); opacity:0.2; bottom:5%; left:20%; animation:drift 18s linear infinite; animation-delay:-4s;">
+        </div>
+        <div
+            style="position:absolute; width:350px; height:350px; border-radius:50%; background:radial-gradient(circle, #6366f1 0%, transparent 70%); filter:blur(80px); opacity:0.22; bottom:20%; right:10%; animation:drift 22s linear infinite; animation-delay:-12s;">
+        </div>
+
+
+        <div
+            style="position:absolute; inset:0; background:radial-gradient(ellipse at 50% 50%, transparent 50%, rgba(0,0,0,0.5) 100%);">
+        </div>
+    </div>
+
+
+    <style>
+        @keyframes drift {
+            0% {
+                transform: translate(0px, 0px) scale(1);
+            }
+
+            25% {
+                transform: translate(40px, 30px) scale(1.05);
+            }
+
+            50% {
+                transform: translate(20px, 60px) scale(0.97);
+            }
+
+            75% {
+                transform: translate(-30px, 25px) scale(1.03);
+            }
+
+            100% {
+                transform: translate(0px, 0px) scale(1);
+            }
+        }
+
+
+
+
+
+        .typewriter {
+            overflow: hidden;
+            white-space: nowrap;
+            width: fit-content;
+            animation: typing 4s steps(60) forwards, blink 0.7s infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+    </style>
+
+    <section class="relative z-10 flex flex-col items-center justify-center min-h-screen px-1 text-center">
+
+        <h1 class="text-5xl md:text-6xl text-blue-500 font-red-rose mb-10">
+            About Me
+        </h1>
+
+        <p class="typewriter text-blue-500 text-lg md:text-xl leading-relaxed font-red-rose ">
+            I’m a Computer Science student passionate about building scalable web applications
+            and intelligent systems.
+        </p>
+        <p class="typewriter text-blue-500 text-lg md:text-xl leading-relaxed font-red-rose ">
+            I enjoy solving real-world problems through clean code
+            and structured thinking using various technologies :
+        </p>
+
+        <div class="mt-14 flex flex-wrap justify-center gap-6">
+
+            <div class="rounded-2xl bg-white/10 backdrop-blur-md 
+                px-6 py-3 border-2 border-white/10
+                hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20
+                transition-all duration-300 hover:-translate-y-1">
+                <p class="text-white font-fugaz hover:text-red-500 uppercase">HTML 5</p>
+            </div>
+
+            <div class="rounded-2xl bg-white/10 backdrop-blur-md 
+                px-6 py-3 border border-white/10
+                hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20
+                transition-all duration-300 hover:-translate-y-1">
+                <p class="text-white font-fugaz hover:text-red-500 uppercase">CSS 3</p>
+            </div>
+
+            <div class="rounded-2xl bg-white/10 backdrop-blur-md 
+                px-6 py-3 border border-white/10
+                hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20
+                transition-all duration-300 hover:-translate-y-1">
+                <p class="text-white font-fugaz hover:text-red-500 uppercase">JavaScript</p>
+            </div>
+
+            <div class="rounded-2xl bg-white/10 backdrop-blur-md 
+                px-6 py-3 border border-white/10
+                hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20
+                transition-all duration-300 hover:-translate-y-1">
+                <p class="text-white font-fugaz hover:text-red-500 uppercase">Node.js</p>
+            </div>
+
+            <div class="rounded-2xl bg-white/10 backdrop-blur-md 
+                px-6 py-3 border border-white/10
+                hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20
+                transition-all duration-300 hover:-translate-y-1">
+                <p class="text-white font-fugaz hover:text-red-500 uppercase">Express.js</p>
+            </div>
+
+            <div class="rounded-2xl bg-white/10 backdrop-blur-md 
+                px-6 py-3 border border-white/10
+                hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20
+                transition-all duration-300 hover:-translate-y-1">
+                <p class="text-white font-fugaz hover:text-red-500 uppercase">PostgreSQL</p>
+            </div>
+
+            <div class="rounded-2xl bg-white/10 backdrop-blur-md 
+                px-6 py-3 border border-white/10
+                hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20
+                transition-all duration-300 hover:-translate-y-1">
+                <p class="text-white font-fugaz hover:text-red-500 uppercase">OAuth2.0</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

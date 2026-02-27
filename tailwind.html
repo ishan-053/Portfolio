@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,400&family=Josefin+Sans:wght@100;300;400;600&display=swap"
+        rel="stylesheet">
+
+    <title>Ishan Shinde — Portfolio</title>
+
+    <style type="text/tailwindcss">
+        body {
+      font-family: 'Josefin Sans', sans-serif;
+      background-color: #1a1a2e;
+      background-image:
+        radial-gradient(ellipse 80% 60% at 20% 10%, rgba(201,168,124,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 80% 90%, rgba(201,168,124,0.05) 0%, transparent 60%);
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .gradient-name {
+      background: linear-gradient(135deg, #e8ddd0 0%, #c9a87c 50%, #e8ddd0 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .profile-ring {
+      background: conic-gradient(from 0deg, #c9a87c, #e8ddd0, #c9a87c, #a07850, #c9a87c);
+      padding: 3px;
+      border-radius: 9999px;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes scaleIn {
+      from { opacity: 0; transform: scale(0.92); }
+      to   { opacity: 1; transform: scale(1); }
+    }
+    @keyframes shimmer {
+      0%, 100% { opacity: 0.5; }
+      50%       { opacity: 1; }
+    }
+
+    .anim-slide-down { animation: slideDown 0.6s ease both; }
+    .anim-scale-in   { animation: scaleIn  0.7s 0.25s ease both; }
+    .anim-fade-up-1  { animation: fadeUp   0.7s 0.45s ease both; }
+    .anim-fade-up-2  { animation: fadeUp   0.7s 0.6s  ease both; }
+    .anim-fade-up-3  { animation: fadeUp   0.7s 0.75s ease both; }
+    .status-dot      { animation: shimmer  2.4s ease-in-out infinite; }
+  </style>
+</head>
+
+<body class="relative">
+
+
+    <nav class="relative z-10 mx-4 mt-4 anim-slide-down">
+        <div
+            class="bg-white/[0.03] backdrop-blur-xl border border-[#c9a87c]/20 rounded-2xl px-8 py-4 flex items-center justify-between shadow-[0_4px_24px_rgba(0,0,0,0.3)]">
+
+            <span style="font-family:'Cormorant Garamond',serif;"
+                class="font-semibold text-xl tracking-widest text-[#c9a87c]"></span>
+
+            <ul class="flex gap-8">
+                <li>
+                    <a href="./about.html"
+                        class="text-[#7a7060] text-xs uppercase tracking-[0.2em] font-light hover:text-[#e8ddd0] transition-colors duration-300 relative group">
+                        About<span
+                            class="absolute -bottom-0.5 left-0 w-0 h-px bg-[#c9a87c] group-hover:w-full transition-all duration-300 justify-between"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./contact.html"
+                        class="text-[#7a7060] text-xs uppercase tracking-[0.2em] font-light hover:text-[#e8ddd0] transition-colors duration-300 relative group">
+                        Contact<span
+                            class="absolute -bottom-0.5 left-0 w-0 h-px bg-[#c9a87c] group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                </li>
+            </ul>
+
+            <div
+                class="flex items-center gap-2 text-[#7a7060] text-[0.68rem] uppercase tracking-widest hover:text-green-500">
+                <span class="w-1.5 h-1.5 rounded-full bg-green-500 status-dot"></span>
+                Available
+            </div>
+
+        </div>
+    </nav>
+
+
+    <section class="relative z-10 flex justify-center mt-14 anim-scale-in">
+        <div class="profile-ring shadow-[0_0_40px_rgba(201,168,124,0.2)]">
+            <div class="bg-[#1a1a2e] rounded-full p-1">
+                <img src="./assets/myprofile.jpeg" alt="Ishan Shinde"
+                    class="w-36 h-36 rounded-full object-cover block" />
+            </div>
+        </div>
+    </section>
+
+
+    <section class="relative z-10 max-w-xl mx-auto mt-8 px-4 pb-24">
+
+
+        <div class="text-center anim-fade-up-1">
+
+            <h1 style="font-family:'Cormorant Garamond',serif;"
+                class="font-semibold text-5xl md:text-6xl leading-tight gradient-name">
+
+                <span class="hover:tracking-widest transition-all duration-700 cursor-default">Ishan Shinde</span>
+
+            </h1>
+            <div class="w-12 h-px bg-[#c9a87c]/50 mx-auto mt-4 mb-6"></div>
+        </div>
+
+
+        <div class="flex justify-center gap-4 flex-wrap anim-fade-up-2 mb-6">
+            <span
+                class="px-6 py-1.5 border border-[#c9a87c]/30 rounded-full text-[#c9a87c] text-xs uppercase tracking-[0.15em] font-light hover:text-[#e8ddd0] transition-colors duration-300 hover:border-[#c9a87c]">
+                Full Stack Developer
+            </span>
+            <span
+                class="px-6 py-1.5 border border-[#c9a87c]/30 rounded-full text-[#c9a87c] text-xs uppercase tracking-[0.15em] font-light hover:text-[#e8ddd0] transition-colors duration-300 hover:border-[#c9a87c]">
+                Second Year CSE Student
+            </span>
+        </div>
+
+
+        <div
+            class="anim-fade-up-3 bg-white/[0.03] backdrop-blur-sm border border-[#c9a87c]/15 rounded-2xl p-8 text-center shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(0,0,0,0.45)] hover:border-[#c9a87c]/30 transition-all duration-500">
+            <p class="text-[#e8ddd0]/75 font-light text-base leading-relaxed tracking-wide">
+                I build <span class="text-[#e8ddd0] font-normal">scalable</span> and
+                <span class="text-[#e8ddd0] font-normal">user-friendly</span> web applications —
+                turning ideas into clean, performant digital experiences.
+            </p>
+
+            <div class="mt-8 flex justify-center gap-4">
+                <a href="./contact.html"
+                    class="px-7 py-2.5 bg-[#c9a87c] text-[#1a1a2e] text-xs uppercase tracking-[0.18em] font-semibold rounded-lg hover:bg-[#e8ddd0] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(201,168,124,0.35)] transition-all duration-200">
+                    Get in Touch
+                </a>
+                <a href="./about.html"
+                    class="px-7 py-2.5 border border-[#c9a87c]/40 text-[#c9a87c] text-xs uppercase tracking-[0.18em] font-light rounded-lg hover:border-[#c9a87c] hover:text-[#e8ddd0] hover:-translate-y-0.5 transition-all duration-200">
+                    My Work
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
